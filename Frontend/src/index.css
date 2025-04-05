@@ -1,0 +1,84 @@
+/* Base styles */
+:root {
+  --primary-color: #10a37f;
+  --primary-hover: #0d8c6d;
+  --text-color: #343541;
+  --text-secondary: #6e6e80;
+  --background-primary: #ffffff;
+  --background-secondary: #f7f7f8;
+  --border-color: #e5e5e5;
+  --shadow-color: rgba(0, 0, 0, 0.05);
+  --message-user-bg: #f7f7f8;
+  --message-assistant-bg: #ffffff;
+  --scrollbar-thumb: #c1c1c1;
+  --scrollbar-track: #f7f7f8;
+  --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+
+  /* Responsive spacing variables */
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+}
+
+/* Dark theme variables */
+body.dark {
+  --primary-color: #10a37f;
+  --primary-hover: #0d8c6d;
+  --text-color: #ececf1;
+  --text-secondary: #acacbe;
+  --background-primary: #343541;
+  --background-secondary: #444654;
+  --border-color: #4d4d4f;
+  --shadow-color: rgba(0, 0, 0, 0.3);
+  --message-user-bg: #444654;
+  --message-assistant-bg: #343541;
+  --scrollbar-thumb: #555;
+  --scrollbar-track: #222;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--background-primary);
+  color: var(--text-color);
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--background-primary);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background-primary);
+}
+
+/* Firefox Scrollbar */
+* {
+  scrollbar-color: var(--background-primary) var(--background-primary);
+}
