@@ -2,6 +2,8 @@
 
 CodexAI is an AI-powered code assistant designed to help developers write, debug, and optimize their code efficiently.
 
+**Live Website**: [CodexAI](https://codexai-ten.vercel.app/)
+
 ## Features
 
 - **Smart Code Suggestions** – Get AI-driven recommendations while coding.
